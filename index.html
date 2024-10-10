@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <!-- Balises de base pour le SEO -->
-    <title>Portfolio de Nina Carducci - Photographe</title>
+    <title>Portfolio de Nina Carducci - Photographe à Bordeaux</title>
     <meta
       name="description"
-      content="Découvrez le portfolio de Nina Carducci, photographe professionnelle offrant des services de photographie en Île-de-France."
+      content="Découvrez le portfolio de Nina Carducci, photographe professionnelle à Bordeaux, offrant des services de photographie pour mariages, portraits et entreprises."
     />
 
-    <!-- Rich Snippets (Schema.org) pour Google -->
+    <!-- Rich Snippets (Schema.org) pour le référencement local -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nina Carducci",
-        "jobTitle": "Photographe",
-        "url": "https://www.ninacarducci.com",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci Photographe",
+        "description": "Photographe professionnelle à Bordeaux spécialisée dans les mariages, portraits et photographie d'entreprise.",
         "image": "https://www.ninacarducci.com/assets/images/nina.jpg",
-        "sameAs": [
-          "https://www.instagram.com/ninacarducci.photo",
-          "https://twitter.com/ninacarducci"
-        ],
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Île-de-France",
-          "addressCountry": "France"
-        }
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "44.841225",
+          "longitude": "-0.580036"
+        },
+        "url": "https://www.ninacarducci.com",
+        "telephone": "+33 5 56 67 78 89",
+        "openingHours": "Mo-Fr 10:00-19:00",
+        "priceRange": "$$"
       }
     </script>
 
     <!-- Open Graph pour Facebook -->
     <meta
       property="og:title"
-      content="Portfolio de Nina Carducci - Photographe"
+      content="Portfolio de Nina Carducci - Photographe à Bordeaux"
     />
     <meta
       property="og:description"
-      content="Découvrez les services de photographie de Nina Carducci en Île-de-France."
+      content="Découvrez les services de Nina Carducci, photographe professionnelle à Bordeaux."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.ninacarducci.com" />
@@ -50,11 +56,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Portfolio de Nina Carducci - Photographe"
+      content="Portfolio de Nina Carducci - Photographe à Bordeaux"
     />
     <meta
       name="twitter:description"
-      content="Photographe professionnelle en Île-de-France."
+      content="Photographe professionnelle à Bordeaux spécialisée dans les mariages, portraits et entreprises."
     />
     <meta
       name="twitter:image"
@@ -62,7 +68,11 @@
     />
     <meta name="twitter:site" content="@ninacarducci" />
 
+    <!-- Meta viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <!-- Liens pour les feuilles de style et les polices -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -71,7 +81,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
+
+    <!-- Scripts JavaScript -->
     <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -88,19 +99,26 @@
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
-          <li><a href="#services">Service</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
             <a
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="Lien vers Instagram"
-            /></a>
+              rel="noopener"
+            >
+              <img
+                src="assets/images/instagram.png"
+                alt="Lien vers Instagram de Nina Carducci"
+                loading="lazy"
+              />
+            </a>
           </li>
         </ul>
       </div>
     </div>
+
     <div id="header">
       <div
         id="carouselExampleIndicators"
@@ -174,18 +192,20 @@
         </button>
       </div>
     </div>
+
     <div id="about">
       <div class="picture left">
         <img
           src="./assets/images/nina.jpg"
-          alt="Portrait de Nina Carducci, photographe professionnelle en Île-de-France"
+          alt="Portrait de Nina Carducci, photographe professionnelle à Bordeaux"
+          loading="lazy"
         />
       </div>
       <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
+        <h3 class="about-me__title">À propos de moi</h3>
         <h6 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
-          prédestiné. Saisir un moment, une émotion, une situation, un endroit,
+          prédestinée. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
         </h6>
         <p>
@@ -200,6 +220,7 @@
         </p>
       </div>
     </div>
+
     <div id="gallery">
       <h3 class="title">Portfolio</h3>
       <div class="container py-3">
@@ -283,12 +304,14 @@
         </figure>
       </div>
     </div>
+
     <div id="services">
       <h3 class="title">Mes services</h3>
       <div class="container">
         <!-- Contenu inchangé -->
       </div>
     </div>
+
     <div class="quote">
       <figure>
         <blockquote>
@@ -301,6 +324,7 @@
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </div>
+
     <div id="contact">
       <div class="container">
         <div class="form-container">
@@ -327,6 +351,7 @@
           <img
             src="./assets/images/camera.jpg"
             alt="Appareil photo numérique"
+            loading="lazy"
           />
         </div>
       </div>
