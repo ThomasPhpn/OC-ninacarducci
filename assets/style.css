@@ -330,7 +330,3 @@ input[type="submit"] {
     width: 80%;
   }
 }
-/* NEW CSS*/
-.carousel-indicators [data-bs-target] {
-  background-color: #69aaed;
-}
